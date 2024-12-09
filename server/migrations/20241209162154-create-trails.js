@@ -10,13 +10,16 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       latitude: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER, 
+        allowNull: false
       },
       longitude: {
-        type: Sequelize.INTEGER
+        type: Sequelize.INTEGER, 
+        allowNull: false
       },
       trail_name: {
-        type: Sequelize.STRING
+        type: Sequelize.STRING, 
+        allowNull: false
       },
       crowd_size: {
         type: Sequelize.STRING

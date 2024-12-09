@@ -14,16 +14,40 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   Trails.init({
-    latitude: DataTypes.INTEGER,
-    longitude: DataTypes.INTEGER,
-    trail_name: DataTypes.STRING,
-    crowd_size: DataTypes.STRING,
-    description: DataTypes.STRING,
-    off_leash: DataTypes.BOOLEAN,
-    rating: DataTypes.INTEGER
+    id:{
+      type: DataTypes.INTEGER,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    latitude: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    longitude: {
+      type: DataTypes.INTEGER,
+      allowNull: false
+    },
+    trail_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    },
+    crowd_size: {
+      type: DataTypes.STRING
+    },
+    description: {
+      type: DataTypes.STRING
+    },
+    off_leash: {
+      type: DataTypes.BOOLEAN, 
+    },
+    rating: {
+      type: DataTypes.INTEGER
+    }
   }, {
     sequelize,
     modelName: 'Trails',
+    tableName:'trails',
+    timestamps: true
   });
   return Trails;
 };
