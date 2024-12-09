@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
-//import Library from './components/Library';
+import Library from './components/Library';
 
 function App() {
   return (
@@ -12,11 +12,16 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/pawpath'>Pawpath</Link>
+              <Link to='/library'>Library</Link>
             </li>
           </ul>
         </header>
-
+        <main>
+          <Routes>
+            <Route path='/' />
+            <Route path='/library' element={<Library />} />
+          </Routes>
+        </main>
       </Router>
     </div>
   );
