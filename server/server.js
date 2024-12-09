@@ -13,8 +13,8 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, '../build')));
 
 // Controllers
-// const booksController = require('./controllers/books_controller');
-// app.use('/api/books', booksController);
+const trailsController = require('./controllers/trails_controller');
+app.use('/api/trails', trailsController);
 
 // LISTEN
 //const PORT = process.env.PORT || 5001;
