@@ -1,40 +1,35 @@
 {
-  "name": "pawpath",
-  "version": "1.0.0",
-  "description": "Pawpath app for Geog 576 final ",
-  "main": "server/server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon ../server/server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/lsamo02/pawpath.git"
-  },
-  "keywords": [
-    "aws",
-    "node",
-    "express"
-  ],
-  "author": "Lindsey Samotis",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/lsamo02/pawpath/issues"
-  },
-  "homepage": "https://github.com/lsamo02/pawpath#readme",
+  "name": "pawpath_react",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "cors": "^2.8.5",
-    "dotenv": "^16.4.7",
-    "express": "^4.21.2",
-    "fast-csv": "^5.0.2",
-    "fs": "^0.0.1-security",
-    "node-fetch": "^2.6.6",
-    "nodemon": "^3.1.7",
-    "pg": "^8.13.1",
-    "pg-hstore": "^2.3.4",
+    "cra-template": "1.2.0",
     "react": "^19.0.0",
-    "react-router-dom": "^7.0.2",
-    "request": "^2.88.2",
-    "sequelize": "^6.37.5"
+    "react-dom": "^19.0.0",
+    "react-scripts": "5.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
