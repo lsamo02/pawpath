@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom'
-import Library from './components/Library';
+import Trails from './components/trail';
 
 function App() {
   return (
@@ -12,14 +12,14 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/pawpath'>PawPath</Link>
+              <Link to='/trail'>Trails</Link>
             </li>
           </ul>
         </header>
         <main>
           <Routes>
             <Route path='/' />
-            <Route path='/pawpath' element={<Pawpath />} />
+            <Route path='/trail' element={<Trails />} />
           </Routes>
         </main>
       </Router>

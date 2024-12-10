@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-export default function Library() {
+export default function Trails() {
     const [trails, setTrails] = useState([])
 
     useEffect(() => {
@@ -14,7 +14,7 @@ export default function Library() {
 
     return (
         <div>
-            <h1>Library</h1>
+            <h1>Trails</h1>
             <ul>
                 { trails.map((trail, index) => (
                     <li key={index} style={{paddingBottom: '25px'}}>

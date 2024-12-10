@@ -19,8 +19,8 @@ app.use('/api/trails', trailsController);
 
 
 // LISTEN
-app.listen(4005, () => {
-    console.log(`Server is running on port 4005`);
+app.listen(8000, () => {
+    console.log(`Server is running on port 8000`);
 })
 
 app.get('*', (req, res) => {
