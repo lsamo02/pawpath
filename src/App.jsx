@@ -12,7 +12,7 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/trail'>Trails</Link>
+              <Link to='/trail'>Dog Friendly Trails</Link>
             </li>
           </ul>
         </header>
