@@ -5,7 +5,7 @@ export default function Trails() {
 
     useEffect(() => {
         const fetchData = async () => {
-            const response = await fetch('http://localhost:5434/api/trails/')
+            const response = await fetch('http://localhost:8000/api/trails/')
             const json = await response.json()
             setTrails(json)
         }
