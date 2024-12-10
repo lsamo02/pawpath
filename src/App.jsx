@@ -12,14 +12,14 @@ function App() {
               <Link to='/'>Home</Link>
             </li>
             <li>
-              <Link to='/library'>Library</Link>
+              <Link to='/pawpath'>PawPath</Link>
             </li>
           </ul>
         </header>
         <main>
           <Routes>
             <Route path='/' />
-            <Route path='/library' element={<Library />} />
+            <Route path='/pawpath' element={<Pawpath />} />
           </Routes>
         </main>
       </Router>
